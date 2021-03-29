@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build App') {
       steps {
-         'gradle build'
+         './gradlew build'
       }
     }
   }
