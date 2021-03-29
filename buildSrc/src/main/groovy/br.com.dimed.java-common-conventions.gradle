@@ -5,6 +5,7 @@
 plugins {
     // Apply the java Plugin to add support for Java.
     id 'java'
+    id 'info.solidsoft.pitest' version '1.5.1' apply false
 }
 
 repositories {
