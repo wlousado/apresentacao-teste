@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Scan with Sonarqube'){
       steps{
-        sh './gradlew sonarqube -Dsonar.projectKey=test_project -Dsonar.host.url=http://localhost:9000 -Dsonar.login=b34f47ad3f5919e4aea8b6c3eb96b19d857dbf12'
+        sh './gradlew sonarqube -Dsonar.projectKey=test_project -Dsonar.host.url=http://localhost:9000 -Dsonar.login=a3520f5b5302675f70a3e140e046e85c513e2f8b'
       }
     }
   }
