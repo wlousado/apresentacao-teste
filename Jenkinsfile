@@ -1,12 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Gradle build') {
+    stage('Clone Repository') {
       steps {
         sh 'git clone https://github.com/wlousado/apresentacao-teste.git'
-        sh 'ls'
       }
     }
-
+    stage('Build App') {
+      steps {
+         'gradle build'
+      }
+    }
   }
 }
