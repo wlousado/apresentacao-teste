@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Gradle build') {
       steps {
-        sh 'gradle build'
+        sh 'git clone https://github.com/wlousado/apresentacao-teste.git'
+        sh 'ls'
       }
     }
 
